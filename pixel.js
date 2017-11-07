@@ -44,6 +44,9 @@ this.blue=b;
 
     this.brighten = function(n){
         //code in here
+        this.red=this.red + (this.red*n);
+        this.blue=this.blue + (this.blue*n);
+        this.green=this.green + (this.green*n);
 
     };
 
@@ -55,7 +58,7 @@ this.blue=b;
     };
 
     this.grayScale = function(n){
-        //code in here
+        my.grayScale= (mypixel.red+mypixel.green+mypixel.blue)/3;
     };
 
 
